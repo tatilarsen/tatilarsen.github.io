@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src= "assets/Mountains.jpg" alt="Mount Timpanogos in Utah" height="300">
+
+        <div class="intro">
+            <h1>
+                Tatiana Larsen
+            </h1>
+
+            <p>
+                I make an impact in the world by empowering teams to achieve their goals through streamlined processes and effective problem-solving.        </div>
+
+    </header>
+
+    <nav class="nav">
+    <a href="projectManager.html">Project Manager</a>
+    <a href="technicalWriter.html">Technical Writer</a>
+    <a href="translator.html">Translator</a>
+    <a href="skills.html">Education and Skills</a>
+    <a href="index.html">Home</a>
+    </nav>
+
+<h1 class="brown">Project Manager Collapsible</h1>
+
+<h2 class="brown">Home Project Manager 2006 - Present</h2>
+<p class="brown">
+    Managed the care and development of 7 children (birth to 17 years). Managed 8 different homes, including maintenance, cleaning, moves, home sales, purchases, refinances, and major repairs.
+</p>
+<button class="collapsible">Taught Children these Skills:</button>
+<div class="content">
+    <ul class="brown">
+        <li>Cooperation</li>
+        <li>Negotiation</li>
+        <li>Quality work</li>
+        <li>Nutrition</li>
+        <li>Safe food handling</li>
+        <li>Cooking</li>
+        <li>Driving</li>
+        <li>Principles of quality childcare</li>
+        <li>Creating systems to ensure adequate care for children, including feeding, sleep, education, and life skills.</li>
+    </ul></div>
+<button class="collapsible">Facilitated Children's Education:</button>
+<div class="content">
+    <ul class="brown">
+        <li>Creation of systems to teach children</li>
+        <li>Curated and managed extracurricular activities</li>
+        <li>Examples include: orchestra, band, karate, church programs, and summer camps.</li>
+        <li>Conducted daily family reading time.</li>
+        <li>Homeschooled for 3 years, 3 different children.</li>
+    </ul>
+</div>
+<button class="collapsible">Home Logistics:</button>
+<div class="content">
+    <ul class="brown">
+        <li>Maintenance of 8 different homes</li>
+        <li>Daily cleaning of the homes</li>
+        <li>Cultivation of a 100 sq ft garden for 5 years</li>
+        <li>Harvest and storage of over 100 gallons of food</li>
+        <li>Meal planning and preparation for a family of 8</li>
+        <li>Seven household moves, 3 cross-country</li>
+        <li>Creating and using a budget</li>
+        <li>Maintained consistent debt-free status.</li>
+        <li>Filed family taxes for 18 years using online tax software.</li>
+    </ul>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

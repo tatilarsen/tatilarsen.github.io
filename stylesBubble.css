@@ -1,0 +1,94 @@
+.vertical-center {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    /*gets the words exactly centered 
+    vertically instead of just centering 
+    the top of the box*/
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    /*make the boxes each take 45%*/
+
+}
+
+.left-box {}
+
+.right-box {}
+
+.buttons-wrapper {
+    position: absolute;
+}
+
+.button {
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px;
+    /* Centers the text */
+    text-align: center;
+    background-color: #129490;
+    color: #eae7d7;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    width: 200px;
+    height: 200px;
+
+}
+
+.button:hover {
+    background-color: #D16666;
+}
+
+.button:hover::after {
+    content: attr(data-hover-text);
+    color: #eae7d7;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.button:hover .disappear {
+    display: none;
+}
+
+.projectmanager {
+    margin-top: 200px;
+}
+
+.techwriter {
+    margin-top: 400px;
+}
+
+.eventplanner {
+    margin-left: 200px;
+}
+
+.translator {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.customerservice {
+    margin-top: 400px;
+    margin-left: 200px;
+}
+
+.teacher {
+    
+}
