@@ -59,15 +59,15 @@ main{
 
 /*style each section*/
 
-/*section{ */
-/*    background-color: #f9f9f9;
-/*    border-radius: 8px;
-/*    box-shadow: 0px 4px 6px color: #0b2435;/*adds a shadow to make it flowing*/
-/*    padding: 20px;/*looks like a little card*/
-/*    margin-bottom: 2%;
-/*    width: 100%; /*takes up the whole container*/
-/*    max-width: 800px;
-}*/
+section{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px color: #0b2435;/*adds a shadow to make it flowing*/
+    padding: 20px;/*looks like a little card*/
+    margin-bottom: 2%;
+    width: 100%; /*takes up the whole container*/
+    max-width: 800px;
+}
 
 .centerFooter{
     text-align: left;
